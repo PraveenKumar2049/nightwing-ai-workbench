@@ -1,0 +1,6 @@
+name: nightwing-deliverables
+version: 1.0.0
+description: "MRPL-specific deliverable generation — structured approval notes as real .docx files, built on the docx skill's python-docx pipeline. Registers the generate_approval_note tool and a matching skill."
+author: Nightwing (MRPL, SIH 2026)
+provides_tools:
+  - generate_approval_note

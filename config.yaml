@@ -1,0 +1,38 @@
+model:
+  # Nightwing test model — swapped to gemma4:e2b for faster strip-down
+  # iteration (6-14x faster generation than qwen3.5:4b on this GPU, since
+  # it fits 100% on GPU at 16K context vs qwen3.5:4b's CPU-offload split).
+  # Genuinely multimodal (text/image/video/audio), not a text-only
+  # stand-in. qwen3.5:4b stays the fallback/final-demo candidate — both
+  # get re-benchmarked against real scanned documents/drawings before
+  # locking in either one.
+  default: "gemma4:e2b"
+  provider: "custom"
+  base_url: "http://localhost:11434/v1"
+  # No fallback_providers/fallback_model set — agent._fallback_chain stays
+  # empty by default (agent/agent_init.py), so a local model error surfaces
+  # as an error rather than silently routing to a cloud provider.
+
+display:
+  skin: "nightwing"
+
+plugins:
+  # Standalone plugins are opt-in by default — must be listed here or
+  # they're discovered but never loaded. Add each new Nightwing plugin
+  # (build-order items 6-9) to this list as it's built.
+  enabled:
+    - nightwing-deliverables
+
+security:
+  # Stops tools/tirith_security.py auto-downloading a scanner binary from
+  # GitHub releases on first tool call.
+  tirith_enabled: false
+  # Stops tools/lazy_deps.py auto-pip-installing optional backend packages
+  # at runtime (e.g. the Azure/OTLP/TTS extras) when a code path first needs
+  # one.
+  allow_lazy_installs: false
+
+# memory.provider intentionally unset — falls back to the built-in local
+# file-based store (~/.hermes/memories/, tools/memory_tool.py). The cloud
+# backends under plugins/memory/ (Hindsight, Mem0, Honcho, etc.) were
+# removed from this build entirely, not just left unconfigured.

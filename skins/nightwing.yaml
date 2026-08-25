@@ -1,0 +1,114 @@
+name: nightwing
+description: "Nightwing — Sovereign On-Premise Agentic AI Workbench (MRPL, SIH 2026)"
+
+# Dark-authored — deep navy/slate with a cyan-teal accent. Distinct from
+# Hermes' gold/kawaii default: cooler, quieter, built for an industrial
+# on-prem console rather than a chat toy.
+colors:
+  banner_border: "#334155"
+  banner_title: "#22D3EE"
+  banner_accent: "#2DD4BF"
+  banner_dim: "#475569"
+  banner_text: "#E2E8F0"
+  ui_accent: "#2DD4BF"
+  ui_label: "#67E8F9"
+  ui_ok: "#4ade80"
+  ui_error: "#f87171"
+  ui_warn: "#fbbf24"
+  prompt: "#E2E8F0"
+  input_rule: "#334155"
+  response_border: "#22D3EE"
+  status_bar_bg: "#0F172A"
+  status_bar_text: "#CBD5E1"
+  status_bar_strong: "#22D3EE"
+  status_bar_dim: "#475569"
+  status_bar_good: "#4ade80"
+  status_bar_warn: "#fbbf24"
+  status_bar_bad: "#fb923c"
+  status_bar_critical: "#f87171"
+  session_label: "#67E8F9"
+  session_border: "#475569"
+  completion_menu_bg: "#0F172A"
+  completion_menu_current_bg: "#1E293B"
+  selection_bg: "#164E63"
+  shell_dollar: "#2DD4BF"
+  voice_status_bg: "#0F172A"
+
+# Light overlay — same hue family, darkened/desaturated for white terminal
+# backgrounds so contrast stays readable (mirrors the default skin's
+# light_colors approach).
+light_colors:
+  banner_title: "#0E7490"
+  banner_accent: "#0D9488"
+  banner_dim: "#64748B"
+  banner_text: "#1E293B"
+  ui_accent: "#0D9488"
+  ui_label: "#0E7490"
+  ui_ok: "#15803D"
+  ui_error: "#B91C1C"
+  ui_warn: "#B45309"
+  prompt: "#1E293B"
+  response_border: "#0E7490"
+  session_label: "#0E7490"
+  status_bar_text: "#475569"
+  status_bar_strong: "#0E7490"
+  status_bar_dim: "#94A3B8"
+  status_bar_good: "#15803D"
+  status_bar_warn: "#B45309"
+  status_bar_bad: "#C2410C"
+  status_bar_critical: "#B91C1C"
+  shell_dollar: "#0D9488"
+  completion_menu_bg: "#F1F5F9"
+  completion_menu_current_bg: "#E2E8F0"
+  selection_bg: "#CFFAFE"
+  status_bar_bg: "#F1F5F9"
+  voice_status_bg: "#F1F5F9"
+
+spinner:
+  waiting_faces: ["(☾)", "(◐)", "(◓)", "(◑)", "(◒)"]
+  thinking_faces: ["(☾)", "(✦)", "(◈)", "(✦)"]
+  thinking_verbs:
+    - "reasoning"
+    - "checking the manuals"
+    - "running the numbers"
+    - "drafting"
+    - "cross-referencing"
+    - "verifying"
+  wings:
+    - ["⟪☾", "☾⟫"]
+    - ["⟪✦", "✦⟫"]
+    - ["⟪◈", "◈⟫"]
+
+branding:
+  agent_name: "Nightwing"
+  org_name: "MRPL"
+  working_icon: "☾"
+  welcome: "Nightwing — sovereign, on-premise agentic AI. Fully offline, zero external network calls. Type your message or /help for commands."
+  goodbye: "Nightwing signing off. ☾"
+  response_label: " ☾ Nightwing "
+  prompt_symbol: "❯"
+  help_header: "☾ Nightwing — Available Commands"
+
+tool_prefix: "┊"
+
+banner_logo: |
+  [bold #22D3EE] ██   █ █████   ▒███▒ █    █████████     █ █████  ██   █  ▒███▒[/]
+  [bold #22D3EE] ██░  █   █    ░█▒ ░█ █    █   █   █░ █ ░█   █    ██░  █ ░█▒ ░█[/]
+  [bold #2DD4BF] █▒▓  █   █    █▒     █    █   █   █░▒█▒░█   █    █▒▓  █ █▒[/]
+  [bold #2DD4BF] █ █  █   █    █      █    █   █   ▓▒███▒█   █    █ █  █ █[/]
+  [bold #2DD4BF] █ ▓▓ █   █    █   ██ ██████   █   ▒▒█▒█▒▓   █    █ ▓▓ █ █   ██[/]
+  [#2DD4BF] █  █ █   █    █    █ █    █   █   ▒██ ██▓   █    █  █ █ █    █[/]
+  [#475569] █  ▓▒█   █    █▒   █ █    █   █   ▒█▓ ▓█▒   █    █  ▓▒█ █▒   █[/]
+  [#475569] █  ░██   █    ▒█░ ░█ █    █   █   ░█▒ ▒█▒   █    █  ░██ ▒█░ ░█[/]
+  [#475569] █   ██ █████   ▒███▒ █    █   █    █   █▒ █████  █   ██  ▒███▒[/]
+
+banner_hero: |
+  [#22D3EE]              .    ☾    .[/]
+  [#22D3EE]         .                  .[/]
+  [#2DD4BF]      .      ╱▔▔▔▔▔╲      .[/]
+  [#2DD4BF]           ╱   ◈◈◈   ╲[/]
+  [#2DD4BF]          │  ◈  ✦  ◈  │[/]
+  [#2DD4BF]           ╲   ◈◈◈   ╱[/]
+  [#475569]      .      ╲▁▁▁▁▁╱      .[/]
+  [#475569]         .                  .[/]
+  [#475569]              '    '    '[/]

@@ -1,0 +1,20 @@
+MRPL — Pressure Vessel Inspection Report
+Unit: Crude Distillation Unit-2, Vessel V-204
+Inspection Date: 14 August 2026
+Inspector: J. Rao, NDT Level II
+
+Observations:
+1. External surface corrosion noted on the lower shell course, approximately
+   0.8 mm pitting depth, localized to a 30 cm x 15 cm area near the north
+   support saddle.
+2. Insulation jacket found damaged at two locations, allowing moisture
+   ingress — likely contributor to the corrosion above.
+3. Nozzle N-4 flange bolting shows minor surface rust; torque check within
+   acceptable range.
+4. No indications on UT thickness survey exceeding the corrosion allowance;
+   minimum measured thickness 11.2 mm against a design minimum of 9.5 mm.
+5. Relief valve PSV-204A test date is current; next due March 2027.
+
+No active leaks observed. Vessel remains fit for continued service, but the
+insulation damage should be addressed before the next monsoon season to
+prevent further moisture-driven corrosion at the affected location.

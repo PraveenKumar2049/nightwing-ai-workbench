@@ -1,0 +1,33 @@
+# --- Python virtual environments -------------------------------------------
+.venv-hermes-dev/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# --- Local runtime / state (isolated HERMES_HOME for this project) ---------
+# Sessions, memories, credentials-lock, cron state, local sqlite db, caches —
+# none of this is meant to leave the machine it ran on.
+.hermes-nightwing/
+.hermes-runtime/
+
+# --- Ollama / model weights --------------------------------------------------
+# Models are pulled locally at setup time (see README) — never committed.
+*.gguf
+*.bin
+*.safetensors
+.ollama/
+
+# --- Machine-specific logs and scratch state --------------------------------
+.ollama-serve.log
+*.log
+
+# --- Node (if any web-ui / tui packages ever get built out here) -----------
+node_modules/
+
+# --- OS / editor cruft --------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
