@@ -2,8 +2,6 @@
 
 **A sovereign, on-premise agentic AI workbench — built for Smart India Hackathon 2026, Problem Statement SIH26117.**
 
-> 🎥 Demo video: _[link goes here]_
-
 ## The pitch
 
 MRPL needs an AI workbench for confidential industrial work — reading inspection reports, drafting approval notes, running calculations, searching internal manuals — that can run entirely on the organization's own hardware, with a hard guarantee that nothing leaves the building. Off-the-shelf hosted AI tools can't make that guarantee. General-purpose local LLM chat UIs don't act as *agents*: they don't plan multi-step work, call tools, read scanned/handwritten documents, or produce real deliverable files.
